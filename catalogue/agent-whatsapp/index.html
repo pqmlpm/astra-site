@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent WhatsApp – Astra</title>
+<meta name="description" content="Un assistant qui répond, oriente et passe la main à un humain.">
+<link rel="canonical" href="https://astra-agency.ai/catalogue/agent-whatsapp/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B0F1A%22/%3E%3Cpath transform=%22translate%2822 22%29 scale%28.56%29%22 fill=%22%23C9B07A%22 d=%22M50 4 L55.5 40.5 L84 20 L63.5 48.5 L100 50 L63.5 51.5 L84 80 L55.5 59.5 L50 96 L44.5 59.5 L16 80 L36.5 51.5 L0 50 L36.5 48.5 L16 20 L44.5 40.5 Z%22/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://astra-agency.ai/catalogue/agent-whatsapp/">
+<meta property="og:title" content="Agent WhatsApp – Astra">
+<meta property="og:description" content="Un assistant qui répond, oriente et passe la main à un humain.">
+<meta property="og:image" content="https://astra-agency.ai/og.jpg">
+<meta property="og:locale" content="fr_FR">
+<style>
+@font-face{font-family:'Libre Caslon Text';font-style:normal;font-weight:400;font-display:swap;src:url(../../fonts/caslon-400.woff2) format('woff2')}
+@font-face{font-family:'Libre Caslon Text';font-style:italic;font-weight:400;font-display:swap;src:url(../../fonts/caslon-400i.woff2) format('woff2')}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:400;font-display:swap;src:url(../../fonts/sans-400.woff2) format('woff2')}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:500;font-display:swap;src:url(../../fonts/sans-500.woff2) format('woff2')}
+@font-face{font-family:'Public Sans';font-style:normal;font-weight:600;font-display:swap;src:url(../../fonts/sans-600.woff2) format('woff2')}
+:root{--ink:#0B0F1A;--cream:#F4F0E7;--gold:#C9B07A;--gold-deep:#85692F;--fg:#141821;--muted:#5F5B55;--line:rgba(20,24,33,.15);
+--serif:'Libre Caslon Text',Georgia,serif;--sans:'Public Sans','Helvetica Neue',Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--fg);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:#F3F0E8;border-bottom:1px solid rgba(243,240,232,.14)}
+header .wrap{max-width:1100px;display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-size:22px;text-decoration:none}
+.logo svg{width:13px;height:13px;fill:var(--gold)}
+header nav{margin-left:auto;display:flex;gap:18px;font-size:13.5px;flex-wrap:wrap}
+header nav a{text-decoration:none;color:#C8C9CC}
+header nav a:hover{color:#fff}
+.rdv{background:var(--gold);color:#0B0F1A!important;font-weight:600;border-radius:4px;padding:8px 14px}
+@media(max-width:860px){header nav a:not(.rdv){display:none}}
+.crumb{font-size:13px;color:var(--muted);margin:28px 0 0}
+.crumb a{color:var(--muted)}
+.crumb a:hover{color:var(--gold-deep)}
+main{padding-bottom:40px}
+.eyebrow{font:600 12.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin:34px 0 0}
+h1{font-size:clamp(32px,5.5vw,48px);line-height:1.08;margin-top:12px}
+.lead{font-size:18.5px;color:var(--muted);margin:18px 0 0;max-width:640px}
+.bloc{margin-top:40px}
+.bloc h2{font-size:15px;font-family:var(--sans);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.bloc p{margin:0;max-width:680px}
+.bloc.res p{border-left:3px solid var(--gold-deep);background:#ECE6D8;padding:16px 18px;border-radius:4px;font-weight:600}
+.bloc.res.todo p{border-left-color:#B9B2A2;background:transparent;font-weight:400;color:var(--muted)}
+.bloc.arch p{font:400 14px ui-monospace,monospace;color:var(--muted);line-height:1.6}
+figure{margin:40px 0 0}
+figure img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);display:block}
+figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}
+.card{display:flex;flex-direction:column;gap:7px;background:#FFFDF8;border:1px solid rgba(20,24,33,.12);border-radius:6px;padding:18px;text-decoration:none;transition:border-color .25s,transform .25s}
+.card:hover{border-color:rgba(133,105,47,.6);transform:translateY(-2px)}
+.card strong{font-family:var(--serif);font-weight:400;font-size:19px;line-height:1.2}
+.card small{font-size:13.5px;color:var(--muted);line-height:1.45}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.cta{margin:52px 0 0;border-top:1px solid var(--line);padding-top:26px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.cta a.b{background:var(--gold);color:#0B0F1A;text-decoration:none;font-weight:600;border-radius:4px;padding:13px 20px}
+.cta a.b:hover{filter:brightness(1.06)}
+.cta span{font-size:14.5px;color:var(--muted)}
+.faq dt{font-family:var(--serif);font-size:22px;margin-top:30px}
+.faq dd{margin:10px 0 0;color:#2B2F38;max-width:680px}
+.phases{margin-top:10px}
+.phx{border-top:1px solid var(--line);padding:24px 0}
+.phx .l{font:600 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep)}
+.phx h3{font-size:26px;margin-top:6px}
+.phx p{color:var(--muted);margin-top:8px;max-width:680px}
+.phx .dec{color:var(--fg);font-size:15px}
+.phx .dec b{font:600 11.5px var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:2px 7px;margin-right:8px;font-style:normal}
+ul.liste{padding-left:0;list-style:none;margin:14px 0 0;max-width:640px}
+ul.liste li{padding:10px 0;border-bottom:1px solid var(--line)}
+footer{border-top:1px solid var(--line);margin-top:70px;padding:26px 0 40px;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://astra-agency.ai/"}, {"@type": "ListItem", "position": 2, "name": "Catalogue", "item": "https://astra-agency.ai/catalogue/"}, {"@type": "ListItem", "position": 3, "name": "Agent WhatsApp", "item": "https://astra-agency.ai/catalogue/agent-whatsapp/"}]}, {"@type": "CreativeWork", "name": "Agent WhatsApp", "description": "Un assistant qui répond, oriente et passe la main à un humain.", "url": "https://astra-agency.ai/catalogue/agent-whatsapp/", "creator": {"@type": "Organization", "name": "Astra", "url": "https://astra-agency.ai/"}}]}</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="../../" aria-label="Astra, accueil"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4 L55.5 40.5 L84 20 L63.5 48.5 L100 50 L63.5 51.5 L84 80 L55.5 59.5 L50 96 L44.5 59.5 L16 80 L36.5 51.5 L0 50 L36.5 48.5 L16 20 L44.5 40.5 Z"/></svg>Astra</a>
+  <nav><a href="../../catalogue/">Catalogue</a><a href="../../conseil/">Conseil</a><a href="../../outils/">Outils</a><a href="../../automatisation/">Automatisation</a><a href="../../studio/">Studio</a><a href="../../methode/">Méthode</a><a href="../../equipe/">Équipe</a><a href="../../faq/">FAQ</a><a class="rdv" href="https://calendly.com/call-with-astra-agency/30min?utm_medium=website">Prendre rendez-vous</a></nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="../../">Accueil</a> <span aria-hidden="true">›</span> <a href="../../catalogue/">Catalogue</a> <span aria-hidden="true">›</span> <span>Agent WhatsApp</span></p>
+<p class="eyebrow"><a href="../../automatisation/" style="color:inherit;text-decoration:none">Automatisation des processus</a></p>
+<h1>Agent WhatsApp</h1>
+<p class="lead">Un assistant qui répond, oriente et passe la main à un humain.</p>
+
+<div class="bloc"><h2>Le contexte</h2><p>Une entreprise de formation et de coaching en e-commerce devait accompagner ses élèves après l’achat, en conversation individuelle et dans 200 groupes WhatsApp, avec une petite équipe de coachs.</p></div>
+<div class="bloc"><h2>Ce que nous avons construit</h2><p>Un agent WhatsApp sur mesure : recherche dans la base de connaissances du programme, ton de la marque, commandes et règles de comportement, accès à des statistiques pour les coachs et les administrateurs, et relais vers une personne quand la conversation l’exige.</p></div>
+<div class="bloc res"><h2>Le résultat</h2><p>200 groupes WhatsApp pris en charge et 8 000 demandes traitées dès le premier mois (statistiques de l’agent).</p></div>
+
+<div class="bloc"><h2>Dans le même service</h2><div class="grid"><a class="card" href="../../catalogue/sourcing-codex/"><strong>Sourcing Codex</strong><small>D’un besoin client à un brief de sourcing complet, en une passe.</small></a><a class="card" href="../../catalogue/moteur-prospection/"><strong>Moteur de prospection</strong><small>Des messages de prospection personnalisés, préparés automatiquement.</small></a><a class="card" href="../../catalogue/milo-telegram/"><strong>Milo, le compagnon de groupe Telegram</strong><small>Un agent qui vit dans la conversation, avec sa mémoire et sa personnalité.</small></a><a class="card" href="../../catalogue/sourcing-candidats/"><strong>Sourcing de candidats</strong><small>Une recherche de profils qui tourne en continu.</small></a></div></div>
+<div class="cta"><a class="b" href="https://calendly.com/call-with-astra-agency/30min?utm_medium=website">Prendre rendez-vous — 30 min</a><span>ou écrivez-nous : <a href="mailto:pierre@astra-agency.ai">pierre@astra-agency.ai</a></span></div>
+</div></main>
+<footer><div class="wrap"><span>© 2026 Astra · Paris · Singapour</span><span><a href="../../">astra-agency.ai</a> · <a href="mailto:pierre@astra-agency.ai">pierre@astra-agency.ai</a></span></div></footer>
+</body>
+</html>
